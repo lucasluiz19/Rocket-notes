@@ -9,7 +9,7 @@ export function Details(){
       
       <Header/>
       
-      <Button title="voltar"/>
+      <Button title="voltar" />
 
     </Container>
   )

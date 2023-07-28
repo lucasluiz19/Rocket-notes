@@ -1,3 +1,4 @@
+
 import styled  from "styled-components";
 
 export const Container = styled.header`
@@ -15,6 +16,47 @@ export const Container = styled.header`
     
     padding: 0 80px;
 
-    background:red;
-
 ` 
+
+export const Profile = styled.div`
+  display:flex ;
+  align-items: center;
+
+  >img{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-right: 25px;
+  }
+
+  >div{
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+
+    span{
+        font-size: 14px;
+        color: ${({theme})=>theme.COLORS.GRAY_100};
+    }
+    strong{
+        font-size: 18px;
+        color: ${({theme})=>theme.COLORS.WHITE};
+    }
+  }
+   
+
+`; 
+
+export const Logout = styled.button`
+    border: none;
+    background:none;
+    
+    >svg{
+        color: ${({theme})=>theme.COLORS.GRAY_100};
+        font-size: 36px;
+
+        
+    }
+    
+
+`;
