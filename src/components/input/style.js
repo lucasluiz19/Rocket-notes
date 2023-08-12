@@ -1,9 +1,9 @@
-import { styled } from "styled-components";
+import styled  from "styled-components";
 
 export const Container = styled.div`
 
     width:100%;
-    display:flex;
+    display:flex; 
     align-items: center;
 
     background-color: ${({theme}) => theme.COLORS.background_900};
@@ -29,7 +29,7 @@ export const Container = styled.div`
     }
 
     >svg {
-            margin:0 16px ;
+            margin-left:16px ;
           
         }
 

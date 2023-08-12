@@ -3,6 +3,9 @@ import { Container, Brand, Menu, Search, Content, Newnote } from "./style";
 import { Header} from "../../components/header"
 import { ButtonText } from "../../components/buttonText"
 import { Input} from "../../components/input"
+import {Section} from "../../components/Section"
+import {Note} from "../../components/Note"
+
 
 
 export function Home(){
@@ -32,7 +35,17 @@ export function Home(){
             </Search>
 
             <Content>
-
+                <Section title="Minhas Notas">
+                    <Note data={{
+                        title: "React Modal",
+                        tags: [
+                            {id: '1', name:"react"},
+                            {id: '2',  name:"nodeJs"}
+                            ]
+                        }}
+                    />
+                    
+                </Section>                
             </Content>
 
             <Newnote>
