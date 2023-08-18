@@ -10,6 +10,7 @@ export const Container = styled.button`
     padding:22px;
 
     margin-bottom: 16px;
+    
 
     >h1{
         flex:1;
@@ -22,6 +23,7 @@ export const Container = styled.button`
         width: 100%;
         display:flex;
         margin-top: 24px;
+       
     
     }
 `;

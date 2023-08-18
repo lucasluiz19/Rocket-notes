@@ -49,7 +49,7 @@ export const Search = styled.div`
 export const Content = styled.div`
     grid-area:content;
     padding:  0 64px  ;
-    overflow-y:auto ;
+    overflow-y:auto;
 `;
 
 export const Newnote = styled.button`
