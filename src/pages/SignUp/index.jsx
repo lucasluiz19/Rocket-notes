@@ -7,7 +7,8 @@ import {Button} from "../../components/button"
 export function SignUp(){
     return(
         <Container>
-            <Background/>
+            <Background />
+
             <Form>
                 <h1>Rocket Notes</h1>
                 <p>Aplicação para salvar e gerenciar seus links úteis.</p>
@@ -19,7 +20,6 @@ export function SignUp(){
                     type="text"
                     icon={FiUser}
                 />
-
 
                 <Input
                     placeholder="E-mail"
