@@ -1,5 +1,5 @@
-import {Container, Form} from "./style"
-import {FiArrowLeft, FiUser, FiMail, FiLock}from "react-icons/fi"
+import {Container, Form, Avatar} from "./style"
+import {FiArrowLeft, FiUser, FiMail, FiLock, FiCamera}from "react-icons/fi"
 
 import {Input} from "../../components/input"
 import {Button} from "../../components/button"
@@ -14,8 +14,24 @@ export function Profile() {
                 </a>
             </header>
             <Form>
+                <Avatar>
+                    <img 
+                        src="https://github.com/lucasluiz19.png"
+                        alt="Foto do usuário"
+                    />
+
+                    <label htmlFor="Avatar">
+                        <FiCamera/>
+                        <input
+                            id="avatar"
+                            type="file"
+                        />
+                    </label>
+                </Avatar>
+
+
                 <Input
-                    placeholder="nome"
+                    placeholder="Nome"
                     type="text"
                     icon={FiUser}                
                 />
@@ -28,7 +44,7 @@ export function Profile() {
                 />
 
                 <Input
-                    placeholder="senha"
+                    placeholder="Senha"
                     type="password"
                     icon={FiLock}                
                 />
@@ -39,7 +55,8 @@ export function Profile() {
                     icon={FiLock}                
                 />
 
-                <Form title="salvar"/>    
+                 <Button title="Salvar"/>   
+                <Form/>    
 
             </Form>
 
